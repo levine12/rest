@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 /**
  * This class configured as controller using annotation and mapped with the URL of
  * 'module/basicexample/basicexampleLink.form'.
+ * 
  */
 @Controller("${rootrootArtifactId}.BasicexampleController")
 @RequestMapping(value = "module/basicexample/basicexample.form")
@@ -39,6 +40,7 @@ public class BasicexampleController {
 	 */
 	@RequestMapping(method = RequestMethod.GET)
 	public String onGet() {
+            
 		return VIEW;
 	}
 	
